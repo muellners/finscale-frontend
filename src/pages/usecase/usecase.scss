@@ -1,0 +1,68 @@
+@import '../../variables';
+
+.case {
+
+  &__header {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient( rgba($color-black, 0.5), $color-black), url('../../img/usecase-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 200%;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1%;
+    }
+  }
+
+  &__how {
+    height: 50vh;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba($color-primary-light, 0.05);
+
+  }
+
+  &__image {
+    height: 60rem;
+    width: 60rem;
+  }
+
+  &__about {
+    
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 20rem ;
+
+    &-main {
+      display: flex;
+    }
+  }
+
+  &__text{
+    display: flex;
+    padding: 0 4rem;
+    flex-direction: column;  
+    padding-top: 5%;
+
+    &-box {
+      margin: 2% 3%;
+    }
+  }
+}

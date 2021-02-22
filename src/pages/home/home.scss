@@ -1,0 +1,128 @@
+@import '../../variables';
+
+.header{
+    height: 95vh;
+    background: url('../../img/hero.jpeg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+ 
+    &__logo-box{
+     position: absolute;
+     top: 40px;
+     left: 20px;
+    }
+ 
+    &__logo{
+     height: 40px;
+     }
+     &__text-box{
+         position: absolute;
+         top: 45%;
+         left: 30%;
+         transform: translate(-50%, -50%);
+         text-align: left;
+     }
+
+    &__video {
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+ }
+ 
+
+ .about{
+   height: 120vh;
+    background-color: rgba($color-primary-light, 0.03);
+    padding: 5rem 20rem 20rem 20rem;
+    margin-top: -20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  &__heading-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+    width: 50%;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+
+    & > p {
+      margin: 3% 0;
+    }
+  }
+
+  &__pictures-box{
+    position: relative;
+    left: 60%;
+  }
+
+   &__photo{
+        border-radius: 2px;
+        width: 25rem;
+        height: 20rem;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &--p1 {
+            left: -12rem;
+            top: -1rem;
+        }
+
+        &--p2 {
+            right: 0;
+            top: 5rem;
+        }
+
+        &--p3 {
+            left: -5rem;
+            top: 13rem;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+  }
+}
+
+.usecase {
+  background: $color-white;
+  background-size: cover;
+  background-position: top;
+  padding: 20rem 10rem 1rem 10rem;
+  margin-top: -30vh;
+
+  &__heading-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
