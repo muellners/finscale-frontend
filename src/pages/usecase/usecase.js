@@ -60,7 +60,7 @@ export default function Usecase() {
 
           <div className="case__text">
             <div className="case__text-box">
-              <h3 className="heading-tertiary">Smart Contracts</h3>
+              <h3 className="heading-tertiary">Closed Loop Payments</h3>
               <p className="paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis placeat quibusdam deleniti esse minus omnis amet quas,

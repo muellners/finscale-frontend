@@ -2,7 +2,7 @@ import React from 'react';
 import './card.scss';
 import sm from '../../img/smart-contracts.jpeg';
 
-export default function Card({right}) {
+export default function Card({right, heading, content, href}) {
   return (
     <div className="card">
 
@@ -14,14 +14,12 @@ export default function Card({right}) {
             </div>
 
             <div className="card__text-box">
-              <h3 className="heading-tertiary">Smart Contracts</h3>
+              <h3 className="heading-tertiary">{heading}</h3>
               <p className="paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis placeat quibusdam deleniti esse minus omnis amet quas,
-                nostrum nam possimus.
+                {content}
               </p>
 
-              <a href="#" className="btn-text">Learn more &rarr;</a>
+              <a href={href} className="btn-text">Learn more &rarr;</a>
 
             </div>
           </>
@@ -45,7 +43,7 @@ export default function Card({right}) {
             </>
         )
       }
-      
+
     </div>
   )
 }
