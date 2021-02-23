@@ -17,7 +17,7 @@ export default function Home() {
             <span className="heading-primary-main">Finscale</span>
             <span className="heading-primary-sub">Is where the magic happens</span>
           </h1>
-          <a href="#" className="btn btn-white">Learn more</a>
+          <a href="https://muellners-1.gitbook.io/finscale/" className="btn btn-white">Learn more</a>
         </div>
       </header>
 
@@ -32,13 +32,13 @@ export default function Home() {
           <div className="about__text-box">
             <h3 className="heading-tertiary">What is Finscale</h3>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus dolorem adipisci fuga. Nam expedita nobis minima, repudiandae exercitationem impedit consectetur alias.
+            An innovative open source financial services platform that is continuous to change for any developer to serve the needs of their use case instantly while supporting thousands of transactions.
                         </p>
 
             <h3 className="heading-tertiary">How does it work</h3>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus dolorem adipisci fuga. Nam expedita nobis minima, repudiandae exercitationem impedit consectetur alias.
-                        </p>
+            Any FI could simply use our service to work and start using this as a base platform, quickly and rapidly create thier own services by using our generators to create a micro-service that can join and leave the service.
+            </p>
           </div>
           <div className="about__pictures-box">
             <img src={gb} alt="Natours Logo" className="about__photo about__photo--p1" />
@@ -66,8 +66,9 @@ export default function Home() {
                    Example : A transaction is taking place between A & B over Finscale ledger layer with integrated external CBS for which A is a KYC customer and say B is Hospital's Pharmacy."
           href="https://wallet.finscale.net/"
           />
-          <Card />
-          <Card right/>
+          {/*<Card />*/}
+          <Card right
+          href="https://muellners-1.gitbook.io/finscale/" />
         </div>
       </section>
     </div>
