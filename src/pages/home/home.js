@@ -2,6 +2,7 @@ import React from 'react';
 import './home.scss'
 import bg from '../../img/hero-bg.mp4';
 import gb from '../../img/global.jpg';
+import FinscaleLogo from '../../img/finscale-logo.png';
 import Card from '../../components/cards/card';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <div className="home">
       <header className="header">
         <div className="header__logo-box">
-          <img src='' alt="Finscale Logo" className="header__logo" />
+          <img src={FinscaleLogo} alt="Finscale Logo" className="header__logo" />
         </div>
         <div className="header__text-box">
           <h1 className="heading-primary">
@@ -19,7 +20,7 @@ export default function Home() {
           <a href="#" className="btn btn-white">Learn more</a>
         </div>
       </header>
-      
+
       <section className="about">
         <div className="about__heading-box">
           <h2 className="heading-secondary">
@@ -48,7 +49,7 @@ export default function Home() {
         </div>
 
       </section>
-      
+
 
       <section className="usecase">
         <div className="usecase__heading-box">
@@ -56,7 +57,7 @@ export default function Home() {
             Use cases
           </h2>
         </div>
-        
+
         <div className="usecase__main">
           <Card right/>
           <Card />

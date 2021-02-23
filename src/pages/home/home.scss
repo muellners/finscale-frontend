@@ -6,15 +6,15 @@
     background-size: cover;
     background-position: top;
     position: relative;
- 
+
     &__logo-box{
      position: absolute;
      top: 40px;
      left: 20px;
     }
- 
+
     &__logo{
-     height: 40px;
+     height: 90px;
      }
      &__text-box{
          position: absolute;
@@ -30,7 +30,7 @@
     }
 
  }
- 
+
 
  .about{
    height: 120vh;
@@ -100,7 +100,7 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
-    
+
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
