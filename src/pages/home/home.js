@@ -59,7 +59,13 @@ export default function Home() {
         </div>
 
         <div className="usecase__main">
-          <Card right/>
+          <Card
+          right
+          heading="Closed Loop Payments using Finscale Wallet"
+          content="Let's take hospital as an eco-system which consists of several individual units like Pharmacy, Cafetaria etc. which can use different payment methods with 'finscale wallet' in a closed environment.
+                   Example : A transaction is taking place between A & B over Finscale ledger layer with integrated external CBS for which A is a KYC customer and say B is Hospital's Pharmacy."
+          href="https://wallet.finscale.net/"
+          />
           <Card />
           <Card right/>
         </div>
